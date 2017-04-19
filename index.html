@@ -5,19 +5,28 @@
 		<meta charset="utf-8"> 
 		<title>Etch-A-Sketch</title>
 		<link type="text/css" rel="stylesheet" href="css/etch-a-sketch.css">
-		<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 		</head>
 	<body style="background-color: #efefef">
 	<div class="body">
-		<input type="button" id="sqr" onclick="gridSize();" value="how many squares">
-		<input type="button" id="color" onclick="hover();" value="color it">
+		<div class="header">
+		<h1 style="text-align: center">Etch-a-Sketch</h1>
+			<input type="button" class="left" id="sqr" onclick="gridSize();" value="How many squares per side?">
+			<input type="button" class="left1" id="color" onclick="hover();" value="Color">
+			<input type="button" class="right" id="reset" onclick="reset();" value="Reset">
+		</div>
+			<div class="reminders">
+				<p>**HOTKEYS/SHORTCUTS: F1- How many squares per side, F2 - Color, F3 - RESET</p>
+			</div>
 
-		<div class="container">
-			<!-- <div class="container"> -->
-		</div>	
+				<div class="container">
+
+				</div>	
 	</div>
+
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/shortcut.js"></script>
 	<script src="js/etch-a-sketch.js"></script>
+
 	</body>
 </html>
